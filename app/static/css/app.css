@@ -1,3 +1,216 @@
-body {
-    padding-top: 5rem;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Golos+Text:wght@400..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&family=Syne:wght@400..800&display=swap');
+
+body 
+{
+
+    background-color: rgb(247, 247, 247);
+    font-family: "Jost", sans-serif;
+    margin: 100px 100px 100px 100px;
+    padding: 0;
+
+}
+
+.flashes
+{
+
+    background-color: #14b7a7;
+
+}
+
+.bi
+{
+
+    padding-right: 5px;
+
+}
+
+.nav-item
+{
+
+    padding: 0 10px;
+
+}
+
+.navbar-brand 
+{
+
+    padding: 10px;
+    gap: 10px
+
+}
+
+.form-group 
+{
+
+    padding: 10px 0;
+    margin: 0;
+
+}
+
+.form-label 
+{
+
+    font-weight: bold;
+    padding: 10px 0;
+    margin: 0;
+
+}
+
+.form-login {
+    max-width: 330px;
+    padding: 15px;
+}
+
+.form-login input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-login input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+.files-row
+{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0px;
+
+}
+
+
+
+.columns
+{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 15px;
+
+}
+
+.rows
+{
+
+    display: grid;
+    grid-template-rows: repeat(auto-fit, auto-fit);
+    grid-gap: 10px;
+
+}
+
+.property
+{
+
+    margin: 300px 100px 100px 100px;
+
+}
+
+.image
+{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.img-thumbnail
+{
+
+    height: 500px;
+    width: 500px;
+    border: 0px;
+    border-radius: 0px;
+    padding: 0px, 15px, 0px, 15px;
+
+}
+
+.properties .title
+{
+
+    font-size: 20px;
+    font-weight: 550;
+
+}
+
+.properties
+{
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-gap: 15px;
+
+}
+
+.properties .price, 
+.property .price, 
+.property .type, 
+.estate .price,
+.estate .type 
+{
+
+    position: relative;
+    background-color: #60a4f9;
+    color: white;
+    padding: 6px;
+    width: 100px;
+    border-radius: 25px;  
+    text-align: center;
+    font-size: 10px;
+    font-weight: 200px;
+
+}
+
+.property .type,
+.estate .type 
+{
+
+    background-color: #f8d617;
+    width: 70px;
+
+}
+
+.information
+{
+
+    font-weight: 450;
+    font-size: 15px;
+    padding: 20px;  
+
+}
+
+.information div
+{
+
+    padding: 10px 0 10px 0;
+
+}
+
+.information .title, .estate .title
+{
+
+    font-size: 30px;
+    font-weight: 630;
+
+}
+
+.information .info, .estate .info
+{
+
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-gap: 10px;
+
+}
+
+.information .rooms
+{
+
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+
 }

@@ -1,0 +1,13 @@
+{% with messages = get_flashed_messages() %}
+    <!-- If there are flash messages, display them -->
+    {% if messages %}
+        <div class="flash-messages">
+            <!-- Loop through each flash message and display it -->
+            {% for message in messages %}
+                <div class="alert alert-success">{{ message }}</div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endwith %}
+
+

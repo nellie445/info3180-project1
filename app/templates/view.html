@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="property card shadow" style="border: none;">
+    <div class="card body columns" style="border: none;">
+        <div class="photo">
+            <img src="{{ url_for('photo', filename=property.photo) }}" style="border: none; border-radius: 10px 0 0 10px;" class="image card-img-top" alt="{{ property.photo.label }}">
+        </div>
+
+        <div class="information">
+            <div class="title">{{ property.title }}</div>
+
+            <div class="info">
+                <div class="price btn">{{ property.price }}</div>
+                <div class="type btn">{{ property.type }}</div>
+            </div>
+
+            <div class="description">{{ property.description }}</div>
+
+            <div class="rooms">
+                <div class="bedrooms"><i class="bi bi-building"></i> {{ property.bedrooms }}</div>
+                <div class="bathrooms"> <i class="bi bi-water"></i> {{ property.bathrooms }}</div>
+            </div>
+
+            <div class="location"><i class="bi bi-geo-alt"></i> {{ property.location }}</div>
+            <br> 
+            
+        </div>
+    </div>
+
+</div>
+{% endblock %}

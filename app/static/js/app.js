@@ -1,8 +1,16 @@
-/* Add your Application JavaScript */
-console.log('this is some JavaScript code');
+document.addEventListener('DOMContentLoaded', function() {
+  
+  //Script: Files
 
-function notify() {
-  alert('in here I will do something');
-}
+  document.getElementById('file-upload').addEventListener('change', function() {
 
-// notify();
+    var fullPath = this.value;
+    var fileName = fullPath.split('\\').pop();
+
+    // Display the selected file name (optional)
+    
+    document.getElementById('selected-file').innerHTML = fileName;
+  
+  });
+  
+}); 
